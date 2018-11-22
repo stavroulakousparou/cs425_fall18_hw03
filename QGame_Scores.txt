@@ -1,0 +1,7 @@
+mike	0
+anna	0
+elena	170
+niki	150
+chris	120
+marios	0
+chris02	10
