@@ -2,617 +2,697 @@
 
 <game>
 
-  <question category="level_1">
+  <question category="level_0">
     
-    <title>A piece of icon or image on a web page associated with another webpage is called.
+    <ques>
+      <title>A piece of icon or image on a web page associated with another webpage is called.</title>
       <answer>url</answer>
-      <answer>none of the mentioned</answer>
       <answer>plugin</answer>
-      <answer>hyperlink </answer>
-      <correct_answer>hyperlink </correct_answer>
-   </title>
-    
-     <title>Dynamic web page
-      <answer>is same every time whenever it displays</answer>
+      <answer>hyperlink</answer>
       <answer>none of the mentioned</answer>
-      <answer>both (a) and (b)</answer>
-      <answer>generates on demand by a program or a request from browser</answer>
-      <correct_answer>generates on demand by a program or a request from browser</correct_answer>
-    </title>
+      <correct_answer>hyperlink</correct_answer>
+    </ques>
 
-    <title>What is a web browser?
+     <ques>
+      <title>Dynamic web page</title>
+      <answer>is same every time whenever it displays</answer>
+      <answer>generates on demand by a program or a request from browser</answer>
+      <answer>both (a) and (b)</answer>
+      <answer>none of the mentioned</answer>
+      <correct_answer>generates on demand by a program or a request from browser</correct_answer>
+    </ques>
+
+    <ques>
+      <title>What is a web browser?</title>
       <answer>a program that can display a web page</answer>
       <answer>a program used to view html documents</answer>
       <answer>it enables user to access the resources of internet</answer>
       <answer>all of the mentioned</answer>
       <correct_answer>all of the mentioned</correct_answer>
-    </title>
+    </ques>
 
-    <title>Common gateway interface is used to 
+    <ques>
+      <title>Common gateway interface is used to</title>
       <answer>generate web pages</answer>
       <answer>stream videos</answer>
-      <answer>none of the mentioned</answer>
       <answer>generate executable files from web content by web server</answer>
+      <answer>none of the mentioned</answer>
       <correct_answer>generate executable files from web content by web server</correct_answer>
-    </title>
+    </ques>
 
-    <title>URL stands for 
+    <ques>
+      <title>URL stands for</title>
       <answer>unique reference label</answer>
       <answer>uniform reference label</answer>
       <answer>uniform resource locator</answer>
       <answer>uniform resource locator</answer>
       <correct_answer>uniform resource locator</correct_answer>
-    </title>
+    </ques>
 
-    <title>A web cookie is a small piece of data
-      <answer>none of the mentioned</answer>
+    <ques>
+      <title>A web cookie is a small piece of data</title>
       <answer>sent from user and stored in the server while a user is browsing a website</answer>
       <answer>sent from root server to all servers</answer>
       <answer>sent from a website and stored in user’s web browser while a user is browsing a website</answer>
+      <answer>none of the mentioned</answer>
       <correct_answer>sent from a website and stored in user’s web browser while a user is browsing a website</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which one of the following is not used to generate dynamic web pages?
+    <ques>
+      <title>Which one of the following is not used to generate dynamic web pages?</title>
       <answer>PHP</answer>
       <answer>ASP.NET</answer>
       <answer>JSP</answer>
       <answer>none of the mentioned</answer>
       <correct_answer>none of the mentioned</correct_answer>
-    </title>
+    </ques>
 
-    <title>Who is the founder of the Internet?
+    <ques>
+      <title>Who is the founder of the Internet?</title>
       <answer>Vint Cerf</answer>
       <answer>Charles Babbage</answer>
       <answer>Tim Berners-Lee</answer>
       <answer>None of these</answer>
       <correct_answer>Tim Berners-Lee</correct_answer>
-    </title>
-
-    <title>Who invented world wide web?
+    </ques>
+    
+    
+    <ques>
+      <title>Who invented world wide web?</title>
       <answer>Tim Berners Lee</answer>
       <answer>Sir Thomas</answer>
       <answer>Charles Babbage</answer>
-      <answer>Tim Berners Lee</answer>
+      <answer>Paul Buchheit</answer>
       <correct_answer>Tim Berners Lee</correct_answer>
-    </title>
+    </ques>
 
-    <title>Who is the father of email ?
+    <ques>
+      <title>Who is the father of email?</title>
       <answer>Tim Berners Lee</answer>
       <answer>Charles Babbage</answer>
       <answer>Paul Buchheit</answer>
       <answer>Ray Tomlinson</answer>
       <correct_answer>Ray Tomlinson</correct_answer>
-    </title>
+    </ques>
 
-    <title>Internet’s initial development was supported by
+    <ques>
+      <title>Internet’s initial development was supported by</title>
       <answer>Microsoft</answer>
       <answer>ARPANET</answer>
       <answer>Bill Rogers</answer>
       <answer>Bill Gates</answer>
       <correct_answer>ARPANET</correct_answer>
-    </title>
+    </ques>
 
-    <title>World Wide Web was proposed by
+    <ques>
+      <title>World Wide Web was proposed by</title>
       <answer>Bill Rogers</answer>
       <answer>Bill Gates</answer>
       <answer>Tim Berners-Lee</answer>
       <answer>ARPANET</answer>
       <correct_answer>Bill Rogers</correct_answer>
-    </title>
+    </ques>
 
-    <title>The internet also known simply as --------
+    <ques>
+      <title>The internet also known simply as ______________</title>
       <answer>NIT</answer>
       <answer>NAT</answer>
       <answer>NET</answer>
       <answer>NFT</answer>
       <correct_answer>NET</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is an example of connectivity?
+    <ques>
+      <title>Which of the following is an example of connectivity?</title>
       <answer>Internet</answer>
       <answer>Data</answer>
       <answer>Power Card</answer>
       <answer>Floopy Disk</answer>
       <correct_answer>Internet</correct_answer>
-    </title>
+    </ques>
 
-    <title>______ to transmit information on the World Wide Web.
+    <ques>
+      <title>______________ to transmit information on the World Wide Web.</title>
       <answer>TPPH</answer>
       <answer>HTTP</answer>
       <answer>HPTT</answer>
       <answer>HTPT</answer>
       <correct_answer>HTTP</correct_answer>
-    </title>
+    </ques>
 
-    <title>A web address is also called a ______
+    <ques>
+      <title>A web address is also called a ______________</title>
       <answer>RLU</answer>
       <answer>ULR</answer>
       <answer>URL</answer>
       <answer>LUR</answer>
       <correct_answer>URL</correct_answer>
-    </title>
+    </ques>
 
-    <title>The standard protocol of the Internet is
+    <ques>
+      <title>The standard protocol of the Internet is</title>
       <answer>TCP/IP</answer>
       <answer>Java</answer>
       <answer>DNS</answer>
       <answer>HTML</answer>
       <correct_answer>TCP/IP</correct_answer>
-    </title>
-
-    <title>A ______ shares hardware, software and data among authorized user.
+    </ques>
+    
+    <ques>
+      <title>A ______________ shares hardware, software and data among authorized user.</title>
       <answer>DNS</answer>
       <answer>IP</answer>
       <answer>CPU</answer>
       <answer>Network</answer>
       <correct_answer>Network</correct_answer>
-    </title>
-
-    <title>______ is the exchange of computer stored messages by telecommunication.
+    </ques>
+    
+    <ques>
+      <title>______________ is the exchange of computer stored messages by telecommunication.</title>
       <answer>Save</answer>
       <answer>Download</answer>
       <answer>Copy</answer>
       <answer>E-mail</answer>
       <correct_answer>E-mail</correct_answer>
-    </title>
-
-    <title>Which is the slowest Internet connection service?
+    </ques>
+    
+    <ques>
+      <title>Which is the slowest Internet connection service?</title>
       <answer>Cable modem</answer>
       <answer>Land line</answer>
       <answer>Dial up service</answer>
       <answer>Digital subscriber line</answer>
       <correct_answer>Cable modem</correct_answer>
-    </title>
+    </ques>
 
-    <title>The internet is
+    <ques>
+      <title>The internet is</title>
       <answer>an internal communication system</answer>
       <answer>a large network of networks</answer>
       <answer>a communication system for the Indian Government</answer>
       <answer>all of these</answer>
       <correct_answer>a large network of networks</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is used to write web pages?
+    <ques>
+      <title>Which of the following is used to write web pages?</title>
       <answer>FTP</answer>
       <answer>URL</answer>
       <answer>HTTP</answer>
       <answer>HTML</answer>
       <correct_answer>HTML</correct_answer>
-    </title>
+    </ques>
 
-    <title>In www.compscibits.com, www stands for
+    <ques>
+      <title>In www.compscibits.com, www stands for</title>
       <answer>Wide World Web</answer>
       <answer>World Wide Web</answer>
       <answer>World Wide Weblink</answer>
       <answer>Web World Web</answer>
       <correct_answer>World Wide Web</correct_answer>
-    </title>
+    </ques>
 
-    <title>What was the first network that planted the seeds of internet?
+    <ques>
+      <title>What was the first network that planted the seeds of internet?</title>
       <answer>APARNET</answer>
       <answer>APRANET</answer>
       <answer>ARPANET</answer>
       <answer>APRANAT</answer>
       <correct_answer>ARPANET</correct_answer>
-    </title>
+    </ques>
 
-    <title>The code for a web page is written using ______
+    <ques>
+      <title>The code for a web page is written using ______________</title>
       <answer>Perl</answer>
       <answer>Hypertext markup language</answer>
       <answer>FTP</answer>
       <answer>URL</answer>
       <correct_answer>Hypertext markup language</correct_answer>
-    </title>
+    </ques>
 
   </question>
 
-  <question category="level_2">  
-    <title>The _________ is a standard for specifying any kind of information on the Internet.
+  <question category="level_1">  
+
+    <ques>
+      <title>The ______________ is a standard for specifying any kind of information on the Internet.</title>
       <answer>RLU</answer>
       <answer>ULR</answer>
-      <answer>none of the above</answer>
       <answer>URL</answer>
+      <answer>none of the above</answer>
       <correct_answer>URL</correct_answer>
-    </title>
+    </ques>
 
-    <title>In a URL, the _______ is the client-server program used to retrieve the document.
+    <ques>
+      <title>In a URL, the ______________ is the client-server program used to retrieve the document.</title>
       <answer>path</answer>
       <answer>host</answer>
-      <answer>none of the above</answer>
       <answer>protocol</answer>
+      <answer>none of the above</answer>
       <correct_answer>protocol</correct_answer>
-    </title>
+    </ques>
 
-    <title>In a URL, the _______ is the full name of the file where the information is located.
+    <ques>
+      <title>In a URL, the ______________ is the full name of the file where the information is located.</title>
       <answer>host</answer>
       <answer>protocol</answer>
-      <answer>none of the above</answer>
       <answer>path</answer>
+      <answer>none of the above</answer>
       <correct_answer>path</correct_answer>
-    </title>
+    </ques>
 
-    <title>What are cookies?
+    <ques>
+      <title>What are cookies?</title>
       <answer>Cookies are binary files stored on the server computer and they are kept for various information tracking purpose.</answer>
       <answer>Cookies are binary files stored on the client computer and they are kept for data storage purpose.</answer>
-      <answer>None of the above.</answer>
       <answer>Cookies are text files stored on the client computer and they are kept for various information tracking purpose.</answer>
+      <answer>None of the above.</answer>
       <correct_answer>Cookies are text files stored on the client computer and they are kept for various information tracking purpose.</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is not an example of search engine?
+    <ques>
+      <title>Which of the following is not an example of search engine?</title>
       <answer>Google</answer>
       <answer>Yahoo</answer>
       <answer>Altavista</answer>
       <answer>Gmail</answer>
       <correct_answer>Gmail</correct_answer>
-    </title>
+    </ques>
 
-    <title>What do you need to put your web pages on the www ?
+    <ques>
+      <title>What do you need to put your web pages on the www ?</title>
       <answer>a connection to internet</answer>
       <answer>a web browser</answer>
       <answer>a web server</answer>
       <answer>all of the above</answer>
       <correct_answer>all of the above</correct_answer>
-    </title>
+    </ques>
 
-    <title>An alternative of javascript on windows platform is 
+    <ques>
+      <title>An alternative of javascript on windows platform is</title>
       <answer>ASP.NET</answer>
       <answer>JSP</answer>
       <answer>VBScript</answer>
       <answer>none of the mentioned</answer>
       <correct_answer>VBScript</correct_answer>
-    </title>
+    </ques>
 
-    <title>The collection of links throughout the Internet creates an interconnected network called the
-      <answer>Slide Presentation</answer>
-      <answer>BookmarkT</answer>
-      <answer>Pie chart</answer>
-      <answer>Plotter</answer>
-      <correct_answer>Bookmark</correct_answer>
-    </title>
+    <ques>  
+      <title>The collection of links throughout the Internet creates an interconnected network called the</title>
+      <answer>WWW</answer>
+      <answer>Web</answer>
+      <answer>World Wide Web</answer>
+      <answer>all of the above</answer>
+      <correct_answer>all of the above</correct_answer>
+    </ques>
 
-    <title>AJAX stands for
+    <ques>
+      <title>AJAX stands for</title>
       <answer>asynchronous JSP and xml</answer>
       <answer>advanced JSP and xml </answer>
       <answer>advanced javascript and xml</answer>
       <answer>asynchronous javascript and xml</answer>
       <correct_answer>asynchronous javascript and xml</correct_answer>
-    </title>
+    </ques>
 
-    <title>www is based on which model? 
+    <ques>
+      <title>www is based on which model?</title>
       <answer>3-tier</answer>
       <answer>Local-server</answer>
       <answer>Client-server</answer>
       <answer>None of these</answer>
       <correct_answer>Client-server</correct_answer>
-    </title>
+    </ques>
 
-    <title>What is the full form of URL? 
+    <ques>
+      <title>What is the full form of URL?s</title>
       <answer>Uniform Resource Library</answer>
       <answer>United Resource Library</answer>
       <answer>United Resource Locators</answer>
       <answer>Uniform Resource Locator</answer>
       <correct_answer>Uniform Resource Locator</correct_answer>
-    </title>
+    </ques>
 
-    <title>In a URL, the ______ is the computer on which the information is located.
+
+    <ques>
+      <title>In a URL, the ______________ is the computer on which the information is located.</title>
       <answer>path</answer>
       <answer>protocol</answer>
       <answer>host</answer>
       <answer>none of the above</answer>
       <correct_answer>none of the above</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which protocol is used for secure communication over internet?
+    <ques>
+      <title>Which protocol is used for secure communication over internet?</title>
       <answer>HTTP</answer>
       <answer>UDP</answer>
       <answer>IP</answer>
       <answer>HTTPS</answer>
       <correct_answer>HTTPS</correct_answer>
-    </title>
+    </ques>
 
-    <title>…………offer a quick and easy way to share files and resources directly.
+    <ques>
+      <title>______________ offer a quick and easy way to share files and resources directly.</title>
       <answer>Network</answer>
       <answer>CD</answer>
       <answer>USB</answer>
       <answer>None of the above</answer>
       <correct_answer>Network</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is the correct chronology of internet based facilities?
+    <ques>
+      <title>Which of the following is the correct chronology of internet based facilities?</title>
       <answer>Facebook, Google, Hotmail, Whatsapp</answer>
       <answer>Hotmail, Google, Facebook, Whatsapp</answer>
       <answer>Google, Hotmail, Facebook, whatsapp</answer>
       <answer>Hotmail, Facebook, Google, Whatsapp</answer>
       <correct_answer>Hotmail, Google, Facebook, Whatsapp</correct_answer>
-    </title>
+    </ques>
 
-    <title>Who is the founder of Facebook?
+    <ques>
+      <title>Who is the founder of Facebook?</title>
       <answer>Allen Turing</answer>
       <answer>Tim Berners Le</answer>
       <answer>Glen Recort</answer>
       <answer>Mark Zuckerberg</answer>
       <correct_answer>Mark Zuckerberg</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which one of the following is not a Web Browser?
+    <ques>
+      <title>Which one of the following is not a Web Browser?</title>
       <answer>Internet Explorer</answer>
       <answer>Safari</answer>
       <answer>MS Office</answer>
       <answer>Mozilla Firefox</answer>
       <correct_answer>MS Office</correct_answer>
-    </title>
+    </ques>
 
-    <title>What is the full form of PDF in the context of computer file system?
+    <ques>
+      <title>What is the full form of PDF in the context of computer file system?</title>
       <answer>Personalised Data Format</answer>
       <answer>Pixel Digital File</answer>
       <answer>Pictured Data Format</answer>
       <answer>Portable Document Format</answer>
       <correct_answer>Portable Document Format</correct_answer>
-    </title>
+    </ques>
 
-    <title>A social networking service offered by Google Inc.
+    <ques>
+      <title>A social networking service offered by Google Inc.</title>
       <answer>Facebook</answer>
       <answer>Twitter</answer>
       <answer>Google+</answer>
       <answer>Instagram</answer>
       <correct_answer>Google+</correct_answer>
-    </title>
+    </ques>
 
-    <title>ISP stands for
+    <ques>
+      <title>ISP stands for</title>
       <answer>Internet Service Provider</answer>
-      <answer> International Server Protocol</answer>
+      <answer>International Server Protocol</answer>
       <answer>Internal Storage Protocol</answer>
       <answer>Internet Storage Provider</answer>
       <correct_answer>Internet Service Provider</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is not a component of networking?
+    <ques>
+      <title>Which of the following is not a component of networking?</title>
       <answer>Motherboard</answer>
       <answer>Switches</answer>
       <answer>Routers</answer>
       <answer>Hubs</answer>
       <correct_answer>Motherboard</correct_answer>
-    </title>
+    </ques>
 
-    <title>The extensions .gov,.edu,.nic ,and .net are called as
+    <ques>
+      <title>The extensions .gov,.edu,.nic ,and .net are called as</title>
       <answer>Email targets</answer>
       <answer>DNSs</answer>
       <answer>Domain codes</answer>
       <answer>Mail addresses</answer>
       <correct_answer>Domain codes</correct_answer>
-    </title>
+    </ques>
 
-    <title>In internet terminology IP means
+
+    <ques>
+      <title>In internet terminology IP means</title>
       <answer>Internet Protocol</answer>
       <answer>Internet Provider</answer>
       <answer>Internet Procedure</answer>
       <answer>Internet Processor</answer>
       <correct_answer>Internet Protocol</correct_answer>
-    </title>
+    </ques>
 
-    <title>Its main purpose is to prohibit unauthorized access to your computer via the Internet.
+    <ques>
+      <title>Its main purpose is to prohibit unauthorized access to your computer via the Internet.</title>
       <answer>spyware blocker</answer>
       <answer>popup blocker</answer>
       <answer>firewall</answer>
       <answer>spam</answer>
       <correct_answer>firewall</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which protocol helps to transfer files between computers?
+    <ques>
+      <title>Which protocol helps to transfer files between computers?</title>
       <answer>HTP</answer>
       <answer>FTP</answer>
       <answer>HTTP</answer>
       <answer>FTTP</answer>
       <correct_answer>FTP</correct_answer>
-    </title>
+    </ques>
 
  
   </question>
   
 
-  <question category="level_3">  
+  <question category="level_2">  
 
-    <title>Which of the following is an example of Web browser?
+    <ques>
+      <title>Which of the following is an example of Web browser?</title>
       <answer>Yahoo</answer>
       <answer>Google</answer>
       <answer>Gmail</answer>
       <answer>Mozilla Firefox</answer>
       <correct_answer>Mozilla Firefox</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is not related to information security on the Internet ?
+    <ques>
+      <title>Which of the following is not related to information security on the Internet ?</title>
       <answer>Data Encryption</answer>
       <answer>Water marking</answer>
       <answer>Data Hiding</answer>
       <answer>Information Retrieval</answer>
       <correct_answer>Information Retrieval</correct_answer>
-    </title>
+    </ques>
 
-    <title>___________ forms the highest layer of TCP/IP and divides a message over file into smaller packets which are transmitted over the Internet.
+    <ques>
+      <title>______________ forms the highest layer of TCP/IP and divides a message over file into smaller packets which are transmitted over the Internet.</title>
       <answer>IP</answer>
       <answer>TCP</answer>
       <answer>FTP</answer>
       <answer>Telnet</answer>
       <correct_answer>Telnet</correct_answer>
-    </title>
+    </ques>
 
-    <title>A ________ is typically a database containing information about domain names and their correspondence IP address.
+    <ques>
+      <title>A ______________ is typically a database containing information about domain names and their correspondence IP address.</title>
       <answer>Telnet</answer>
       <answer>FTP</answer>
       <answer>TCP</answer>
       <answer>DNS</answer>
       <correct_answer>DNS</correct_answer>
-    </title>
+    </ques>
 
-    <title>DNS is an Internet service that translates domain names to or from __________.
+
+    <ques>
+      <title>DNS is an Internet service that translates domain names to or from ______________.</title>
       <answer>MAC address</answer>
       <answer>IP address</answer>
       <answer>Both a and b</answer>
-      <answer>IP address</answer>
+      <answer>Domain address</answer>
       <correct_answer>IP address</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which was the first search engine in the Internet?
+    <ques>    
+      <title>Which was the first search engine in the Internet?</title>
       <answer>Alta Vista</answer>
-      <answer>Alta Vista</answer>
+      <answer>Vista</answer>
       <answer>WAIS</answer>
       <answer>Archie</answer>
       <correct_answer>Archie</correct_answer>
-    </title>
+    </ques>
 
-    <title>The coding language used to create documents for use on the World Wide Web is ______
+    <ques>
+      <title>The coding language used to create documents for use on the World Wide Web is ______________</title>
       <answer>HTP</answer>
       <answer>HTML</answer>
       <answer>HTTP</answer>
       <answer>FTP</answer>
       <correct_answer>HTML</correct_answer>
-    </title>
+    </ques>
 
-
-    <title>Internet uses
+    <ques>
+      <title>Internet uses</title>
       <answer>Circuit switching</answer>
       <answer>Telephone switching</answer>
       <answer>Telex switching</answer>
       <answer>Packet switching</answer>
       <correct_answer>Packet switching</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is not a type of broadband Internet connection?
+    <ques>
+      <title>Which of the following is not a type of broadband Internet connection?</title>
       <answer>Cable</answer>
       <answer>DSL</answer>
       <answer>Dial up</answer>
       <answer>Satellite</answer>
       <correct_answer>DSL</correct_answer>
-    </title>
+    </ques>
 
-    <title>______ to send and receive electronic mail.
+    <ques>
+      <title>______________ to send and receive electronic mail.</title>
       <answer>Simple Mail Transfer Protocol</answer>
       <answer>Simple Mail Terminal Protocol</answer>
       <answer>Simple Mail Transport Protocol</answer>
       <answer>Simple Mail Transition Protocol</answer>
       <correct_answer>Simple Mail Transfer Protocol</correct_answer>
-    </title>
+    </ques>
 
-    <title>Buy now–pay now is commonly used for
+    <ques>
+      <title>Buy now–pay now is commonly used for</title>
       <answer>Visa cards</answer>
       <answer>Vaults cards</answer>
       <answer>Credit cards</answer>
       <answer>Debit cards</answer>
       <correct_answer>Visa cards</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is refers to the main page of a website?
+    <ques>
+      <title>Which of the following is refers to the main page of a website?</title>
       <answer>Search page</answer>
       <answer>Home Page</answer>
       <answer>Browser page</answer>
       <answer>Bookmark</answer>
       <correct_answer>Home Page</correct_answer>
-    </title>
+    </ques>
 
-    <title>ISDN stands for
+    <ques>
+      <title>ISDN stands for</title>
       <answer>Integrated Security Data Network</answer>
       <answer>Integrated Security Digital Network</answer>
       <answer>Integrated Services Data Network</answer>
       <answer>Integrated Services Digital Network</answer>
       <correct_answer>Integrated Services Digital Network</correct_answer>
-    </title>
+    </ques>
 
-    <title>XML stands for
+    <ques>
+      <title>XML stands for</title>
       <answer>Extended Markup Language</answer>
       <answer>Excellent Marlup Language</answer>
       <answer>Extended Marking Links</answer>
       <answer>Extra Markup Language</answer>
       <correct_answer>Extended Markup Language</correct_answer>
-    </title>
+    </ques>
 
-    <title>Secret–key encryption is also known as
+    <ques>
+      <title>Secret–key encryption is also known as</title>
       <answer>Secret–encryption</answer>
       <answer>Private encryption</answer>
       <answer>Asymmetric encryption</answer>
       <answer>Symmetric encryption</answer>
       <correct_answer>Private encryption</correct_answer>
-    </title>
+    </ques>
 
-    <title>DNS stands for
+    <ques>
+      <title>DNS stands for</title>
       <answer>Domain Null System</answer>
       <answer>Disk Name System</answer>
       <answer>Domain Number System</answer>
       <answer>Domain Name System</answer>
       <correct_answer>Domain Name System</correct_answer>
-    </title>
+    </ques>
 
-    <title>SMTP stands for
+    <ques>
+      <title>SMTP stands for</title>
       <answer>Simple Mail Transfer Protocol</answer>
       <answer>Simple Mail Transport Protocol</answer>
       <answer>Simple Mail Transition Protocol</answer>
       <answer>Simple Mail Terminal Protocol</answer>
       <correct_answer>Simple Mail Transfer Protocol</correct_answer>
-    </title>
+    </ques>
 
-    <title>Each computer connected to the internet must
+    <ques>
+      <title>Each computer connected to the internet must</title>
       <answer>be an IBM PC</answer>
       <answer>be internet compatible</answer>
       <answer>have a unique IP address</answer>
       <answer>have a modern connection</answer>
       <correct_answer>have a unique IP address</correct_answer>
-    </title>
+    </ques>
 
-    <title>The concept of electronic cash is to execute payment by
+    <ques>
+      <title>The concept of electronic cash is to execute payment by</title>
       <answer>Cheque</answer>
       <answer>Debit Card</answer>
       <answer>ATM Card</answer>
       <answer>Credit Card</answer>
       <correct_answer>ATM Card</correct_answer>
-    </title>
+    </ques>
 
-    <title>TCP stands for
+    <ques>
+      <title>TCP stands for</title>
       <answer>Transmission Communicational Protocol</answer>
       <answer>Transmission Control Protocol</answer>
       <answer>Transistor Control Protocol</answer>
       <answer>Transform Control Protocol</answer>
       <correct_answer>Transmission Control Protocol</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is not an example of web browser?
+    <ques>
+      <title>Which of the following is not an example of web browser?</title>
       <answer>Safari</answer>
       <answer>Avast</answer>
       <answer>Google Chrome</answer>
       <answer>Internet Explorer</answer>
       <correct_answer>Avast</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is required to create an HTML document?
+    <ques>
+      <title>Which of the following is required to create an HTML document?</title>
       <answer>Browser</answer>
       <answer>Search engine</answer>
       <answer>Internet</answer>
       <answer>Text editor</answer>
       <correct_answer>Text editor</correct_answer>
-    </title>
+    </ques>
 
-    <title>HTML is a
+    <ques>
+      <title>HTML is a</title>
       <answer>Scripting Language</answer>
       <answer>Web Browser</answer>
       <answer>Programming Langauge</answer>
       <answer>Network Protocol</answer>
       <correct_answer>Scripting Language</correct_answer>
-    </title>
+    </ques>
 
-    <title>Which of the following is not a term pertaining to the Internet?
+    <ques>
+      <title>Which of the following is not a term pertaining to the Internet?</title>
       <answer>Browser</answer>
       <answer>Link</answer>
       <answer>Keyboard</answer>
       <answer>Search engine</answer>
       <correct_answer>Keyboard</correct_answer>
-    </title>
-
-    <title>______ is the exchange of computer–stored messages by telecommunication.
+    </ques>
+    
+    <ques>
+      <title>______________ is the exchange of computer–stored messages by telecommunication.</title>
       <answer>E-num</answer>
       <answer>E-web</answer>
       <answer>E-chart</answer>
       <answer>E-mail</answer>
       <correct_answer>E-mail</correct_answer>
-    </title>
+    </ques>
+    
 
   </question>
 
