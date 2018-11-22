@@ -55,12 +55,12 @@
 
                 <br>
                 
-                <li><u> When you answered all of the questions: </u></li>
+                <li><u> When you clicked on "Finsih" button: </u></li>
                 <ol>
                 <li><u>Save your score:</u></li>
-                    - Write your name
+                    - Write a nickname
                     <br>
-                    - Press the button "SAVE"
+                    - Press the button "Save Score"
                 </ol>
 
                 <ol>
@@ -70,7 +70,7 @@
                 <br>
                 </ol>
                 <h3>High Scores. . .</h3>
-                    <li> Press at the button "<i class="fa fa-fw fa-star"></i>High Scores" on the top of this page to see the top scores of the QGame</li>
+                    <li> Press at the button "<i class="fa fa-fw fa-star"></i>High Scores" on the top of this page to see the top scores of the QGame and then you can see the top 5 scores</li>
             </p>
             </div>
 
