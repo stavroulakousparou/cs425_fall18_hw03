@@ -25,6 +25,9 @@
     color: black; 
     border: 2px solid rgb(102, 0, 186);
     font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
 
   #print{
@@ -33,7 +36,26 @@
     transform: translate(-10%, -10%);
   }
 
+/* Clear floats after the columns */
+.row_2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 600px) {
@@ -43,6 +65,14 @@
         max-width: 50%;
     }
     
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -94,6 +124,7 @@ h2{
     text-align: center;
     
 }
+
 h5{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -123,7 +154,6 @@ input[type=submit] {
     border-radius: 10px;
     cursor: pointer;
     float: left;
-
 }
 
 input[type=submit]:hover {
@@ -168,3 +198,16 @@ img{
     margin-right: auto;
     width: fit-content;
   }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
