@@ -41,8 +41,8 @@
         $_SESSION['arrayCorrectAnswer'] = array();
     }
 
-     if(!isset($_SESSION['arrayScore'])){
-        $_SESSION['arrayScore'] = array();
+     if(!isset($_SESSION['overallScore'])){
+        $_SESSION['overallScore'] = 0;
     }
 
 ?>
@@ -68,7 +68,7 @@
 <body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
 
     <?php
-     $answer = $cor = "";    
+     $answer = $cor = $message = "";    
      $number = -1;
      $pushNum = 0;
 
@@ -83,86 +83,68 @@
                 $_SESSION['flag'] = 1;
                 $_SESSION['question_counter'] ++ ;
             } 
+
+            if (isset($_POST['PlayAgain']) || isset($_POST['Save']) || isset($_POST['end'])) {
+               echo "helloooooo";
+            } 
                 
             if(isset($_POST['answer'])){
                 $_SESSION['flag'] = 1;
                 
-                $answer = $_POST['answer'];  // answer that the user chosen
-                echo "Answer: " . $answer;   
+                $answer = $_POST['answer'];  // answer that the user chosen  
                 
                 $cor = $_SESSION['xml']['question'][$_SESSION['level']]['ques'][$_SESSION['numofQuestion']]['correct_answer'];
-                echo "Correct: " . $cor;
-    
+
                if(strcmp($answer, $cor) == 0){
-                array_push( $_SESSION['arrayCorrectAnswer'], 1);
-                if($_SESSION['level'] == 0 || $_SESSION['level'] == 1){
+                    array_push( $_SESSION['arrayCorrectAnswer'],1);
+                    if($_SESSION['level'] == 0 || $_SESSION['level'] == 1){
                         $_SESSION['level'] ++;
-                        echo " yeeeessss " .  $_SESSION['level'];  
                    }else if($_SESSION['level'] == 2){
                         $_SESSION['level'] = 2;
-                        echo " yeeeessss " .  $_SESSION['level']; 
-                   }
-
-                   // add the score for each question in the table
-                   if($_SESSION['level'] == 0){
-                       array_push($_SESSION['arrayScore'],10);
-                   }else if($_SESSION['level'] == 1){
-                       array_push($_SESSION['arrayScore'],20);
-                   }else if($_SESSION['level'] == 2){
-                       array_push($_SESSION['arrayScore'],30);
                    }
 
                 }else{
-                    array_push( $_SESSION['arrayCorrectAnswer'], 0);
-                    array_push($_SESSION['arrayScore'],0);
+                    array_push( $_SESSION['arrayCorrectAnswer'],0);
                     if($_SESSION['level'] == 1 || $_SESSION['level'] == 2){
                         $_SESSION['level'] --;
-                        echo " noooooo " .  $_SESSION['level'];  
                    }else if($_SESSION['level'] == 0){
                         $_SESSION['level'] = 0;
-                        echo " nooooooo " .  $_SESSION['level']; 
                    }
                     
                 }
+            }else{
+                array_push( $_SESSION['arrayCorrectAnswer'],-1);
+                if($_SESSION['level'] == 1 || $_SESSION['level'] == 2){
+                    $_SESSION['level'] --;
+               }else if($_SESSION['level'] == 0){
+                    $_SESSION['level'] = 0;
+               }
             }
 
 
             if (isset($_POST['Finish'])) {
                 $_SESSION['flagFinish'] = 1;
-                echo "FINISHHH.." . $_SESSION['flagFinish'] ;
+            }                      
 
-            } 
-                
-/*
-                // save the number of question in the array
-               if($_SESSION['level'] == 0){
-                    array_push($_SESSION['arrayWithQuestions'],$_SESSION['numofQuestion']);
-                }else if($_SESSION['level'] == 1){
-                    $pushNum = $_SESSION['numofQuestion']+24;
-                    array_push($_SESSION['arrayWithQuestions'],$pushNum);
-                }else if($_SESSION['level'] == 2){
-                    $pushNum = $_SESSION['numofQuestion']+48;
-                    array_push($_SESSION['arrayWithQuestions'],$pushNum);
-                }
-                */
-                     
+            if (isset($_POST['Save'])) {
+                echo "Save";
+                $myfile = fopen("QGame_Scores.txt", "w") or die("Unable to open file!");
+                $txt =  $_POST['nickname']."\t". $_SESSION['overallScore']."\n";
+                fwrite($myfile, $txt);
+                fclose($myfile);
+              }
+
+              if (isset($_POST['end']) || isset($_POST['PlayAgain']) ) {
+                session_unset();
+                session_destroy();
+                $_SESSION['flag']=0;
+                $_SESSION['flagFinish'] = 0;
+              }
 
         }// post
-
-
-        // define variables and set to empty values
-           
-        
-        //if($_SERVER['REQUEST_METHOD']=="GET"){
-           // session_destroy();
-
            ?>
-
           
-            <?php
-        //  }
-           // }
-
+        <?php
         function test_input($data) {
             $data = trim($data);
             $data = stripslashes($data);
@@ -170,10 +152,10 @@
             return $data;
           }
 
-    ?>
+        ?>
 
 
-    <!-- Navigation Bar
+    <!-- Navigation Bar 
     <div class="container">
         <div class="navbar">
             <a href="HighPage.php"><i class="fa fa-fw fa-star"></i>High Scores </a>
@@ -181,17 +163,12 @@
             <a href="index.php"><i class="fa fa-fw fa-check-square-o"></i>Home Page </a>
         </div>
         <div>
-           <br><br>
+           <br>
         </div>
 
     </div>
-
+-->
     <br>
-    <br>
-    <br>
-    <br>
-
- -->
     <?php
      if($_SESSION['flag'] == 0){?> 
         <div class="vertical-center">
@@ -205,10 +182,7 @@
         </div>
 <?php
        }else if($_SESSION['flag'] == 1 || $_SESSION['flagFinish'] == 1){
-            echo $_SESSION['question_counter'];
-            echo $_SESSION['maxNumOfQuestion'];
             if($_SESSION['question_counter'] <= $_SESSION['maxNumOfQuestion']){
-                //$_SESSION['xml'] =simplexml_load_file("oo.xml") or die("Error: Cannot create object");
                 $source = 'questions.xml';
                 // load as string
                 $xmlstr = file_get_contents($source);
@@ -219,11 +193,9 @@
 
                 $_SESSION['numofQuestion']= rand(0,24); // a random number of question from xml file    
 
-                
                 // only asked once
                 $i=0;
                 while($i<10){
-                    //echo "tttaaa" . $_SESSION['arrayWithQuestions'][$i];
                     if ($_SESSION['arrayWithQuestions'][$i] == $_SESSION['xml']['question'][$_SESSION['level']]['ques'][$_SESSION['numofQuestion']]['title']){
                         $_SESSION['numofQuestion']=rand(0,24);
                         $i=0;
@@ -231,10 +203,7 @@
                         $i++;
                     }
                     array_push($_SESSION['arrayWithQuestions'], $_SESSION['xml']['question'][$_SESSION['level']]['ques'][$_SESSION['numofQuestion']]['title']);
-                    array_push( $_SESSION['arrayLevel'], $_SESSION['level']);
-                   
                 }
-
 
 
         ?>
@@ -243,7 +212,7 @@
                     <input type="hidden" name="status" value="play">
 
                         <label><strong> <?php echo $_SESSION['xml']['question'][$_SESSION['level']]['ques'][$_SESSION['numofQuestion']]['title']. "<br>";?> </strong></label>
-                        
+                        <?php array_push($_SESSION['arrayLevel'],$_SESSION['level']); ?>
                             <br>
 
                             <!-- Radio buttons -->
@@ -261,8 +230,8 @@
                                     <input type="submit" name="end" value="END"/> 
                             <?php
                                 }else if($_SESSION['question_counter'] ==  $_SESSION['maxNumOfQuestion']){?>
-                                    <input type="submit" name="Finish" value="Finish"> 
-                                        
+                                    <input type="submit" name="Finish" value="Finish">
+                                    <input type="submit" name="end" value="END"/>                                         
                             <?php 
                                 }
                             ?>                            
@@ -279,26 +248,108 @@
             <?php
                 
                 } else{
-                    echo "FINISHHH....1 ";
             ?>
-                     <input type="submit" name="Finish" value="oooooo"> 
 
-                    <div class="footer">
+                <!-- Create table - Overall Score -->
+                <div class="mainwidth">
+
+                <h1 id="help">Overall Scores</h1>
+                <br>
+                <div class="helpAlign">
+                <p>
+                    <table style="width:100%">
+                    <tr>
+                        <th><h2>Number of Question<span style="display:inline-block; width:45px;"></span></h2></th>
+                        <th><h2>Answer<span style="display:inline-block; width:45px;"></span></h2></th> 
+                        <th><h2>Difficulty<span style="display:inline-block; width:45px;"></span></h2></th>
+                        <th><h2>Score of your answer<span style="display:inline-block; width:45px;"></span></h2></th>                        
+                    </tr>
+                    <?php 
+                        for($m=0; $m<$_SESSION['maxNumOfQuestion']; $m++){?>
+                            <tr>
+                                <td><?php echo $m+1; ?></td>
+
+                                <!-- Answer (Correct or Wrong)-->
+                                <td><?php if($_SESSION['arrayCorrectAnswer'][$m] == 0){echo "Wrong";
+                                          }else if($_SESSION['arrayCorrectAnswer'][$m] == 1){echo "Correct";
+                                          }else if($_SESSION['arrayCorrectAnswer'][$m] == -1){echo "No answer";}
+                                    ?>
+                                </td>
+
+                                <td><?php if($_SESSION['arrayLevel'][$m] == 0){echo "1";
+                                          }else if($_SESSION['arrayLevel'][$m] == 1){ echo "2";
+                                          }else if($_SESSION['arrayLevel'][$m] == 2){ echo "3";}
+
+                                    ?>
+                                </td>
+
+                                <td><?php 
+                                        if($_SESSION['arrayCorrectAnswer'][$m] == -1){
+                                            echo "0 points";
+                                        }else{
+                                            if($_SESSION['arrayLevel'][$m] == 0){
+                                                echo "10 points";
+                                                $_SESSION['overallScore'] +=10;
+                                            }else if($_SESSION['arrayLevel'][$m] == 1){
+                                                echo "20 points";
+                                                $_SESSION['overallScore'] +=20;
+                                            }else if($_SESSION['arrayLevel'][$m] == 2){ 
+                                                echo "30 points";
+                                                $_SESSION['overallScore'] +=30;
+                                            }
+                                        }
+                                    ?>
+                                </td>
+                        <?php
+                            }                 
+                        ?>
+                           </tr>
+                       
+                    </table>
+                    <h3>Your Overall Score: <?php echo $_SESSION['overallScore']; $_SESSION['overallScore']=0; ?> </h3>
+                    <br>
+                    <div class="row_2">
+                        <div class="col-25">
+                            <label><b> Write your nickname: </b></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="nickname" name="nickname" placeholder="Nickname...">
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <input type="submit" name="Save" value="Save Score"/>
+                    <input type="submit" name="PlayAgain" value="Play Again"/>
+
+                    <br><br><br><br><br>
+                    <?php echo $message?>
+                </p>
+                
+                </div>
+
+                </div>
+
+                <footer>
+                    <h5>
+                        <a href="#top"><img id="go_up" src="goup.jpg" alt="Go on top" style="width:40px"></a>
+                        <br><br><br><br>
+                    </h5>
+                </footer>
+
+
+                <div class="footer">
                     <h4><?php echo "F I N I S H  "?><h4>
                 </div>
 
             <?php
                 }
         }
-         //session_unset();
-        //session_destroy();
+     //  session_unset();
+     // session_destroy();
         ?>
 
         
     <footer>
-        <h5>
-            <a href="#top"><img id="go_up" src="goup.jpg" alt="Go on top" style="width:40px"></a>
-        </h5>
+        
     </footer>
 
 
