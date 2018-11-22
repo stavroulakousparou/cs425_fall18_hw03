@@ -26,10 +26,7 @@
             <a href="HelpPage.php"><i class="fa fa-fw fa-question-circle"></i>Help </a>
             <a href="index.php"><i class="fa fa-fw fa-check-square-o"></i>Home Page </a>
         </div>
-        <div>
-            <h6>\n</h6>
-        </div>
-
+        <br>
     </div>
  
 
@@ -40,7 +37,7 @@
             <div class="helpAlign">
             <p>
                 <h3> Play the QGame. . .</h3>
-                <br>
+                
                 <li> Press at the button "<i class="fa fa-fw fa-check-square-o"></i>Home Page" on the top of this page</li>
                 <li> Press the "START" button to start the game</li>
 
@@ -54,21 +51,28 @@
                 </ol>
 
                 <br>
-                
-                <li><u> When you clicked on "Finsih" button: </u></li>
-                <ol>
-                <li><u>Save your score:</u></li>
-                    - Write a nickname
-                    <br>
-                    - Press the button "Save Score"
-                </ol>
+                <li><u>Points:</u></li>
+                <br>
+                Correct at Level 1 = 10 points <br>
+                Correct at Level 2 = 10 points <br>  
+                Correct at Level 3 = 10 points <br>  
+                Wrong = 0 points <br>  
+                No answer = 0 points <br>  
 
+                <br>
+
+                <li><u> When you clicked on "Finish" button: </u></li>
                 <ol>
-                <li><u>Play again the QGame:</u></li>
-                    - Press the button "Play Again"
-                </ol>
+                    <li><u>Save your score:</u></li>
+                        - Write a nickname
+                        <br>
+                        - Press the button "Save Score"
+                        <br><br>
+                    <li><u>Play again the QGame:</u></li>
+                        - Press the button "Play Again"
                 <br>
                 </ol>
+                <br>
                 <h3>High Scores. . .</h3>
                     <li> Press at the button "<i class="fa fa-fw fa-star"></i>High Scores" on the top of this page to see the top scores of the QGame and then you can see the top 5 scores</li>
             </p>
